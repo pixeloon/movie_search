@@ -1,0 +1,27 @@
+<div class="panel panel-default" ng-controller='showController'>
+    <div class="panel-heading">
+        <h4>
+      Angular OMDb API Search Details
+    </h4>
+        <a href="/"><strong>New Search</strong></a>
+    </div>
+    <div class="panel-body">
+        <ul class="media-list">
+            <li class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="{{data.Poster}}}" alt="movie poster">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">About:</h4>
+                    <h5><u>Title</u>: {{data.Title}}</h5>
+                    <h5><u>Year</u>: {{data.Year}}</h5>
+                    <h5><u>Rating</u>: {{data.imdbRating}}</h5>
+                    <h5><u>Genre</u>: {{data.Genre}}</h5>
+                    <h5><u>Actors</u>: {{data.Actors}}</h5>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
